@@ -1,8 +1,21 @@
 package com.driver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
     private String name;
     private String mobile;
+
+    private List<Message> messageList = new ArrayList<>();
+
+    public List<Message> getMessageList() {
+        return messageList;
+    }
+
+    public void setMessageList(List<Message> messageList) {
+        this.messageList = messageList;
+    }
 
     public User() {
     }
